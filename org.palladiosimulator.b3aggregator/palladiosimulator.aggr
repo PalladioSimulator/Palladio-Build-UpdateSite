@@ -245,7 +245,7 @@
         <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.source.feature.feature.group" versionRange="1.0.0.201506191800"/>
         <features name="org.palladiosimulator.simulizar.source.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA"/>
       </repositories>
-      <repositories location="http://cloudscale.xlab.si/cse/updatesites/usageevolution/nightly/">
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/cloudscale/usageevolution/nightly/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057"/>
       </repositories>
       <repositories location="https://se2.informatik.uni-wuerzburg.de/eclipse/limbo/">
