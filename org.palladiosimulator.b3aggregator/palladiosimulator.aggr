@@ -44,6 +44,14 @@
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.reliability.source.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
+	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/releases/latest/">
+        <features name="org.palladiosimulator.simulation.abstractsimengine.feature.feature.group" versionRange="4.1.0.201806251234" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.source.feature.feature.group" versionRange="4.1.0.201806251234" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
+      </repositories>
+	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/releases/latest/">
+        <features name="org.palladiosimulator.scheduler.feature.feature.group" versionRange="4.1.1.201806251237" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
+        <features name="org.palladiosimulator.scheduler.source.feature.feature.group" versionRange="4.1.1.201806251237" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
+      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/simucom/nightly/">
         <features name="org.palladiosimulator.simucom.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.simucom.source.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
