@@ -44,17 +44,9 @@
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.reliability.source.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/releases/latest/">
-        <features name="org.palladiosimulator.simulation.abstractsimengine.feature.feature.group" versionRange="4.1.0.201806251234" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.source.feature.feature.group" versionRange="4.1.0.201806251234" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-      </repositories>
-	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/releases/latest/">
-        <features name="org.palladiosimulator.scheduler.feature.feature.group" versionRange="4.1.1.201806251237" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.scheduler.source.feature.feature.group" versionRange="4.1.1.201806251237" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/simucom/releases/latest/">
         <features name="org.palladiosimulator.simucom.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.simucom.source.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.simucom.feature.source.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/solver/releases/latest/">
         <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
@@ -76,6 +68,14 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/gmf/releases/latest/">
         <features name="org.palladiosimulator.editors.gmf.feature.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.editors.gmf.source.feature.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/releases/latest/">
+        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.feature.group"/>
+        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.source.feature.group"/>
+      </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/releases/latest/">
+        <features name="org.palladiosimulator.scheduler.feature.feature.group"/>
+        <features name="org.palladiosimulator.scheduler.feature.source.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Luna Platform">
@@ -203,17 +203,17 @@
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319"/>
         <features name="org.palladiosimulator.reliability.source.feature.feature.group" versionRange="1.0.0.201506251319"/>
       </repositories>
-	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/releases/latest/">
-        <features name="org.palladiosimulator.simulation.abstractsimengine.feature.feature.group" versionRange="4.1.0.201806251234"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.source.feature.feature.group" versionRange="4.1.0.201806251234"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/releases/latest/">
+        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.feature.group" versionRange="4.1.0.201806251234"/>
+        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.source.feature.group" versionRange="4.1.0.201806251234"/>
       </repositories>
-	  <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/releases/latest/">
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/releases/latest/">
         <features name="org.palladiosimulator.scheduler.feature.feature.group" versionRange="4.1.1.201806251237"/>
-        <features name="org.palladiosimulator.scheduler.source.feature.feature.group" versionRange="4.1.1.201806251237"/>
+        <features name="org.palladiosimulator.scheduler.feature.source.feature.group" versionRange="4.1.1.201806251237"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/simucom/releases/latest/">
         <features name="org.palladiosimulator.simucom.feature.feature.group" versionRange="4.0.0.201506251820"/>
-        <features name="org.palladiosimulator.simucom.source.feature.feature.group" versionRange="4.0.0.201506251820"/>
+        <features name="org.palladiosimulator.simucom.feature.source.feature.group" versionRange="4.0.0.201506251820"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/solver/releases/latest/">
         <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421"/>
