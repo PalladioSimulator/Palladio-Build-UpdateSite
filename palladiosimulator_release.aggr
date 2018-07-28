@@ -98,9 +98,9 @@
         <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.source.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.source.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.simulizar.source.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.source.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.source.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.simulizar.feature.source.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/cloudscale/usageevolution/releases/latest/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
@@ -257,9 +257,9 @@
         <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.feature.group" versionRange="1.0.0.201506191800"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.feature.group" versionRange="1.0.0.201506191800"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.source.feature.feature.group" versionRange="1.0.0.201506191800"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.source.feature.feature.group" versionRange="1.0.0.201506191800"/>
-        <features name="org.palladiosimulator.simulizar.source.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA"/>
+        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.source.feature.group" versionRange="1.0.0.201506191800"/>
+        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.source.feature.group" versionRange="1.0.0.201506191800"/>
+        <features name="org.palladiosimulator.simulizar.feature.source.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/cloudscale/usageevolution/releases/latest/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057"/>
