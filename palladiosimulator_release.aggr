@@ -50,7 +50,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/solver/releases/latest/">
         <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.solver.source.feature.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.solver.feature.source.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/peropteryx/releases/latest/">
         <features name="de.uka.ipd.sdq.dsexplore.feature.feature.group" versionRange="3.3.0.201506251851" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
@@ -217,7 +217,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/solver/releases/latest/">
         <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421"/>
-        <features name="org.palladiosimulator.solver.source.feature.feature.group" versionRange="4.0.0.201506251421"/>
+        <features name="org.palladiosimulator.solver.feature.source.feature.group" versionRange="4.0.0.201506251421"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/peropteryx/releases/latest/">
         <features name="de.uka.ipd.sdq.dsexplore.feature.feature.group" versionRange="3.3.0.201506251851"/>
