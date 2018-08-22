@@ -28,7 +28,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/sirius/nightly/">
         <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.sirius.source.feature.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.editors.sirius.feature.source.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/framework/nightly/">
         <features name="org.palladiosimulator.analyzer.feature.feature.group" versionRange="1.0.0.201506251525"/>
@@ -63,11 +63,11 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/tree/nightly/">
         <features name="org.palladiosimulator.editors.tree.feature.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.tree.source.feature.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.editors.tree.feature.source.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/gmf/nightly/">
         <features name="org.palladiosimulator.editors.gmf.feature.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.gmf.source.feature.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.editors.gmf.feature.source.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/nightly/">
         <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.feature.group"/>
@@ -122,11 +122,11 @@
         <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.experimentautomation.examples.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.experimentautomation.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.source.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.source.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.source.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.examples.source.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.source.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.experimentautomation.application.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.experimentautomation.examples.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.experimentautomation.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/exactschedulers/nightly/">
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
@@ -187,7 +187,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/sirius/nightly/">
         <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854"/>
-        <features name="org.palladiosimulator.editors.sirius.source.feature.feature.group" versionRange="1.0.0.201506241854"/>
+        <features name="org.palladiosimulator.editors.sirius.feature.source.feature.group" versionRange="1.0.0.201506241854"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/framework/nightly/">
         <features name="org.palladiosimulator.analyzer.feature.feature.group" versionRange="1.0.0.201506251525"/>
@@ -230,11 +230,11 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/tree/nightly/">
         <features name="org.palladiosimulator.editors.tree.feature.feature.group" versionRange="4.0.1.201607200503"/>
-        <features name="org.palladiosimulator.editors.tree.source.feature.feature.group" versionRange="4.0.1.201607200503"/>
+        <features name="org.palladiosimulator.editors.tree.feature.source.feature.group" versionRange="4.0.1.201607200503"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/gmf/nightly/">
         <features name="org.palladiosimulator.editors.gmf.feature.feature.group" versionRange="4.0.1.201607110911"/>
-        <features name="org.palladiosimulator.editors.gmf.source.feature.feature.group" versionRange="4.0.1.201607110911"/>
+        <features name="org.palladiosimulator.editors.gmf.feature.source.feature.group" versionRange="4.0.1.201607110911"/>
       </repositories>
     </contributions>
     <contributions label="Luna Platform">
@@ -281,11 +281,11 @@
         <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.feature.group" versionRange="1.0.0.201506182016"/>
         <features name="org.palladiosimulator.experimentautomation.examples.feature.feature.group" versionRange="1.0.0.201506182016"/>
         <features name="org.palladiosimulator.experimentautomation.feature.feature.group" versionRange="1.0.0.201506182016"/>
-        <features name="org.palladiosimulator.experimentautomation.application.source.feature.feature.group" versionRange="1.0.0.201506182016"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.source.feature.feature.group" versionRange="1.0.0.201506182016"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.source.feature.feature.group" versionRange="1.0.0.201506182016"/>
-        <features name="org.palladiosimulator.experimentautomation.examples.source.feature.feature.group" versionRange="1.0.0.201506182016"/>
-        <features name="org.palladiosimulator.experimentautomation.source.feature.feature.group" versionRange="1.0.0.201506182016"/>
+        <features name="org.palladiosimulator.experimentautomation.application.feature.source.feature.group" versionRange="1.0.0.201506182016"/>
+        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.source.feature.group" versionRange="1.0.0.201506182016"/>
+        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.source.feature.group" versionRange="1.0.0.201506182016"/>
+        <features name="org.palladiosimulator.experimentautomation.examples.feature.source.feature.group" versionRange="1.0.0.201506182016"/>
+        <features name="org.palladiosimulator.experimentautomation.feature.source.feature.group" versionRange="1.0.0.201506182016"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/exactschedulers/nightly/">
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112"/>
