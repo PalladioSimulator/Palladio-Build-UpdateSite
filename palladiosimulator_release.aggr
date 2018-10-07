@@ -132,6 +132,7 @@
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.source.feature.feature.group" versionRange="1.0.0.201506211129" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/architecturaltemplates/loadbalancing/releases/latest/"/>
     </contributions>
     <contributions label="Palladio Reverse Engineering">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/somox/releases/latest/">
@@ -291,6 +292,7 @@
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112"/>
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.source.feature.feature.group" versionRange="1.0.0.201506211129"/>
       </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/architecturaltemplates/loadbalancing/releases/latest/"/>
     </contributions>
     <contributions label="Palladio Reverse Engineering">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/somox/releases/latest/">
