@@ -11,7 +11,7 @@
 	<properties>
 		<tycho.version>1.0.0</tycho.version>
 	</properties>
-	
+
 	<profiles>
 		<profile>
 			<id>nightly-build</id>
@@ -38,7 +38,7 @@
 			</properties>
 		</profile>
 	</profiles>
-	
+
 	<build>
 		<plugins>
 
@@ -66,6 +66,37 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<!-- see https://wiki.eclipse.org/Tycho/Additional_Tools#tycho-eclipserun-plugin_behind_a_proxy -->
+					<execution>
+						<id>configure-proxies-for-eclipserun</id>
+						<phase>generate-resources</phase>
+						<configuration>
+							<target>
+								<touch file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true" />
+
+								<propertyfile file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs">
+									<entry key="eclipse.preferences.version" value="1" />
+									<entry key="nonProxiedHosts" value="${http.nonProxyHosts}" />
+									<entry key="org.eclipse.core.net.hasMigrated" value="true" />
+									<entry key="proxyData/HTTP/hasAuth" value="false" />
+									<entry key="proxyData/HTTP/host" value="${http.proxyHost}" />
+									<entry key="proxyData/HTTP/port" value="${http.proxyPort}" />
+									<entry key="systemProxiesEnabled" value="false" />
+								</propertyfile>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.eclipse.tycho.extras</groupId>
 				<artifactId>tycho-eclipserun-plugin</artifactId>
 				<version>${tycho.version}</version>
@@ -74,7 +105,12 @@
 						<repository>
 							<id>Eclipse CBI Aggregator</id>
 							<layout>p2</layout>
-							<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.7</url>
+							<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
+						</repository>
+						<repository>
+							<id>Eclipse Photon</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/releases/photon</url>
 						</repository>
 					</repositories>
 					<jvmArgs>
@@ -95,7 +131,11 @@
 						<dependency>
 							<artifactId>org.eclipse.cbi.p2repo.cli.product.feature</artifactId>
 							<type>eclipse-feature</type>
-						</dependency>                 
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.core.net</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
 					</dependencies>
 				</configuration>
 				<executions>
@@ -107,7 +147,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 </project>
