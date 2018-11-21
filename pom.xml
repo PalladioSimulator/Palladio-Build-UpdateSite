@@ -14,6 +14,23 @@
 
 	<profiles>
 		<profile>
+			<id>enable-proxy</id>
+			<activation>
+				<property>
+					<name>env.USE_PROXY</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
 			<id>nightly-build</id>
 			<activation>
 				<property>
@@ -39,115 +56,125 @@
 		</profile>
 	</profiles>
 
-	<build>
-		<plugins>
 
+	<build>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.0.0</version>
+					<executions>
+						<execution>
+							<id>workspace-clean</id>
+							<phase>clean</phase>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+							<configuration>
+								<filesets>
+									<fileset>
+										<directory>workspace</directory>
+										<directory>p2</directory>
+									</fileset>
+								</filesets>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-antrun-plugin</artifactId>
+					<version>1.8</version>
+					<executions>
+						<!-- see https://wiki.eclipse.org/Tycho/Additional_Tools#tycho-eclipserun-plugin_behind_a_proxy -->
+						<execution>
+							<id>configure-proxies-for-eclipserun</id>
+							<phase>generate-resources</phase>
+							<configuration>
+								<target>
+									<touch file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true" />
+									<propertyfile file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs">
+										<entry key="eclipse.preferences.version" value="1" />
+										<entry key="nonProxiedHosts" value="${http.nonProxyHosts}" />
+										<entry key="org.eclipse.core.net.hasMigrated" value="true" />
+										<entry key="proxyData/HTTP/hasAuth" value="false" />
+										<entry key="proxyData/HTTP/host" value="${http.proxyHost}" />
+										<entry key="proxyData/HTTP/port" value="${http.proxyPort}" />
+										<entry key="systemProxiesEnabled" value="false" />
+									</propertyfile>
+								</target>
+							</configuration>
+							<goals>
+								<goal>run</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho.extras</groupId>
+					<artifactId>tycho-eclipserun-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<repositories>
+							<repository>
+								<id>Eclipse CBI Aggregator</id>
+								<layout>p2</layout>
+								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
+							</repository>
+							<repository>
+								<id>Eclipse Photon</id>
+								<layout>p2</layout>
+								<url>http://download.eclipse.org/releases/photon</url>
+							</repository>
+						</repositories>
+						<jvmArgs>
+							<args>-Xmx1024m</args>
+						</jvmArgs>
+						<applicationsArgs>
+							<args>-application</args>
+							<args>org.eclipse.cbi.p2repo.cli.headless</args>
+							<args>aggregate</args>
+							<args>--buildModel</args>
+							<args>${aggregation.file}</args>
+							<args>--smtpHost</args>
+							<args>smtp.ira.uka.de</args>
+							<args>--action</args>
+							<args>BUILD</args>
+						</applicationsArgs>
+						<dependencies>
+							<dependency>
+								<artifactId>org.eclipse.cbi.p2repo.cli.product.feature</artifactId>
+								<type>eclipse-feature</type>
+							</dependency>
+							<dependency>
+								<artifactId>org.eclipse.core.net</artifactId>
+								<type>eclipse-plugin</type>
+							</dependency>
+						</dependencies>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>eclipse-run</goal>
+							</goals>
+							<phase>package</phase>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.0.0</version>
-				<executions>
-					<execution>
-						<id>workspace-clean</id>
-						<phase>clean</phase>
-						<goals>
-							<goal>clean</goal>
-						</goals>
-						<configuration>
-							<filesets>
-								<fileset>
-									<directory>workspace</directory>
-									<directory>p2</directory>
-								</fileset>
-							</filesets>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.8</version>
-				<executions>
-					<!-- see https://wiki.eclipse.org/Tycho/Additional_Tools#tycho-eclipserun-plugin_behind_a_proxy -->
-					<execution>
-						<id>configure-proxies-for-eclipserun</id>
-						<phase>generate-resources</phase>
-						<configuration>
-							<target>
-								<touch file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true" />
-
-								<propertyfile file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs">
-									<entry key="eclipse.preferences.version" value="1" />
-									<entry key="nonProxiedHosts" value="${http.nonProxyHosts}" />
-									<entry key="org.eclipse.core.net.hasMigrated" value="true" />
-									<entry key="proxyData/HTTP/hasAuth" value="false" />
-									<entry key="proxyData/HTTP/host" value="${http.proxyHost}" />
-									<entry key="proxyData/HTTP/port" value="${http.proxyPort}" />
-									<entry key="systemProxiesEnabled" value="false" />
-								</propertyfile>
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
 			<plugin>
 				<groupId>org.eclipse.tycho.extras</groupId>
 				<artifactId>tycho-eclipserun-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<repositories>
-						<repository>
-							<id>Eclipse CBI Aggregator</id>
-							<layout>p2</layout>
-							<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
-						</repository>
-						<repository>
-							<id>Eclipse Photon</id>
-							<layout>p2</layout>
-							<url>http://download.eclipse.org/releases/photon</url>
-						</repository>
-					</repositories>
-					<jvmArgs>
-						<args>-Xmx1024m</args>
-					</jvmArgs>
-					<applicationsArgs>
-						<args>-application</args>
-						<args>org.eclipse.cbi.p2repo.cli.headless</args>
-						<args>aggregate</args>
-						<args>--buildModel</args>
-						<args>${aggregation.file}</args>
-						<args>--smtpHost</args>
-						<args>smtp.ira.uka.de</args>
-						<args>--action</args>
-						<args>BUILD</args>
-					</applicationsArgs>
-					<dependencies>
-						<dependency>
-							<artifactId>org.eclipse.cbi.p2repo.cli.product.feature</artifactId>
-							<type>eclipse-feature</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.core.net</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-					</dependencies>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
