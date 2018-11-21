@@ -38,7 +38,7 @@
         <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.protocom.javaee.source.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
-        <features name="org.palladiosimulator.protocom.source.feature.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/reliability/releases/latest/">
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
@@ -88,11 +88,11 @@
     <contributions label="PCM Addons">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/ssj/releases/latest/">
         <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.source.feature.feature.group" versionRange="1.0.0.201506190949" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" versionRange="1.0.0.201506190949" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/servicelevelobjectives/releases/latest/">
         <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.servicelevelobjective.source.feature.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/simulizar/releases/latest/">
         <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
@@ -195,7 +195,7 @@
         <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055"/>
         <features name="org.palladiosimulator.protocom.javaee.source.feature.feature.group" versionRange="1.0.0.201506252055"/>
-        <features name="org.palladiosimulator.protocom.source.feature.feature.group" versionRange="4.0.0.201506252055"/>
+        <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/reliability/releases/latest/">
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319"/>
@@ -245,11 +245,11 @@
     <contributions label="PCM Addons">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/ssj/releases/latest/">
         <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.source.feature.feature.group" versionRange="1.0.0.201506190949"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" versionRange="1.0.0.201506190949"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/servicelevelobjectives/releases/latest/">
         <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816"/>
-        <features name="org.palladiosimulator.servicelevelobjective.source.feature.feature.group" versionRange="1.0.0.201506181816"/>
+        <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/simulizar/releases/latest/">
         <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA"/>
