@@ -37,7 +37,7 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/protocom/releases/latest/">
         <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.protocom.javaee.source.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.protocom.javaee.feature.source.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
         <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/reliability/releases/latest/">
@@ -194,7 +194,7 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/protocom/releases/latest/">
         <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055"/>
-        <features name="org.palladiosimulator.protocom.javaee.source.feature.feature.group" versionRange="1.0.0.201506252055"/>
+        <features name="org.palladiosimulator.protocom.javaee.feature.source.feature.group" versionRange="1.0.0.201506252055"/>
         <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/reliability/releases/latest/">
