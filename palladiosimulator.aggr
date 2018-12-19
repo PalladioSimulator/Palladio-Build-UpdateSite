@@ -130,7 +130,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/exactschedulers/nightly/">
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.source.feature.feature.group" versionRange="1.0.0.201506211129" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.source.feature.group" versionRange="1.0.0.201506211129" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
     </contributions>
     <contributions label="Palladio Reverse Engineering">
@@ -287,7 +287,7 @@
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/exactschedulers/nightly/">
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112"/>
-        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.source.feature.feature.group" versionRange="1.0.0.201506211129"/>
+        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.source.feature.group" versionRange="1.0.0.201506211129"/>
       </repositories>
     </contributions>
     <contributions label="Palladio Reverse Engineering">
