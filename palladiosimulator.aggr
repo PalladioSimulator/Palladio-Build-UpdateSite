@@ -24,7 +24,7 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/monitorrepository/nightly/"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/pcm/nightly/">
         <features name="org.palladiosimulator.pcm.feature.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.pcm.source.feature.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.pcm.feature.source.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/sirius/nightly/">
         <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
@@ -181,7 +181,7 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/monitorrepository/nightly/"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/pcm/nightly/">
         <features name="org.palladiosimulator.pcm.feature.feature.group" versionRange="1.0.0.201506251444"/>
-        <features name="org.palladiosimulator.pcm.source.feature.feature.group" versionRange="1.0.0.201506251444"/>
+        <features name="org.palladiosimulator.pcm.feature.source.feature.group" versionRange="1.0.0.201506251444"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/sirius/nightly/">
         <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854"/>
