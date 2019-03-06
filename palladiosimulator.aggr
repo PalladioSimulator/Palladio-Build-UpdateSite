@@ -80,8 +80,10 @@
         <features name="org.palladiosimulator.editors.gmf.feature.source.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/nightly/">
-        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.feature.group"/>
-        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.source.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/nightly/">
         <features name="org.palladiosimulator.scheduler.feature.feature.group"/>
@@ -96,10 +98,6 @@
       </repositories>
     </contributions>
     <contributions label="PCM Addons">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/ssj/nightly/">
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" versionRange="1.0.0.201506190949" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/servicelevelobjectives/nightly/">
         <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
@@ -222,8 +220,10 @@
         <features name="org.palladiosimulator.reliability.feature.source.feature.group" versionRange="1.0.0.201506251319"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/abstractsimengine/nightly/">
-        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.feature.group" versionRange="4.1.0.201806251234"/>
-        <features name="de.uka.ipd.sdq.simulation.abstractsimengine.feature.source.feature.group" versionRange="4.1.0.201806251234"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group"/>
+        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group"/>
       </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/scheduler/nightly/">
         <features name="org.palladiosimulator.scheduler.feature.feature.group" versionRange="4.1.1.201806251237"/>
@@ -263,10 +263,6 @@
       </repositories>
     </contributions>
     <contributions label="PCM Addons">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/ssj/nightly/">
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" versionRange="1.0.0.201506190949"/>
-      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/servicelevelobjectives/nightly/">
         <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816"/>
         <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816"/>
