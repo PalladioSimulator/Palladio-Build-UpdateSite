@@ -2,8 +2,15 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='steffen.becker@informatik.tu-chemnitz.de']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2">
   <validationSets label="Palladio Core Features Photon">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/releases/latest"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/releases/latest">
+        <features name="org.palladiosimulator.commons.feature.feature.group"/>
+        <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
+      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/releases/latest"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/thirdparty/thirdpartylibrary/releases/latest/">
+        <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
+        <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Recorderframework">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/measurementframework/releases/latest"/>
@@ -12,7 +19,10 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/sensorframework/releases/latest"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/probeframework/releases/latest"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/recorderframework/releases/latest"/>
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/releases/latest/"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/releases/latest/">
+        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
+        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Palladio Core">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/featuremodel/releases/latest"/>
@@ -159,8 +169,15 @@
   </validationSets>
   <validationSets label="Palladio Core Features Oxygen">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/releases/latest"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/releases/latest">
+        <features name="org.palladiosimulator.commons.feature.feature.group"/>
+        <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
+      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/releases/latest"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/thirdparty/thirdpartylibrary/releases/latest/">
+        <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
+        <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Recorderframework">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/measurementframework/releases/latest"/>
@@ -169,7 +186,10 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/sensorframework/releases/latest"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/probeframework/releases/latest"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/recorderframework/releases/latest"/>
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/releases/latest/"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/releases/latest/">
+        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
+        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Palladio Core">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/featuremodel/releases/latest"/>
