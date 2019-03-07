@@ -2,8 +2,15 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='steffen.becker@informatik.tu-chemnitz.de']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2">
   <validationSets label="Palladio Core Features Photon">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/nightly"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/nightly">
+        <features name="org.palladiosimulator.commons.feature.feature.group"/>
+        <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
+      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/nightly"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/thirdparty/thirdpartylibrary/nightly/">
+        <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
+        <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Recorderframework">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/measurementframework/nightly"/>
@@ -12,7 +19,10 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/sensorframework/nightly"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/probeframework/nightly"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/recorderframework/nightly"/>
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/nightly/"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/nightly/">
+        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
+        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Palladio Core">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/featuremodel/nightly"/>
@@ -159,8 +169,15 @@
   </validationSets>
   <validationSets label="Palladio Core Features Oxygen">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/nightly"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/commons/nightly">
+        <features name="org.palladiosimulator.commons.feature.feature.group"/>
+        <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
+      </repositories>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/thirdpartywrapper/nightly"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/thirdparty/thirdpartylibrary/nightly/">
+        <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
+        <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Recorderframework">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/measurementframework/nightly"/>
@@ -169,7 +186,10 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/sensorframework/nightly"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/probeframework/nightly"/>
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/recorderframework/nightly"/>
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/nightly/"/>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/addons/experimentanalysis/nightly/">
+        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
+        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Palladio Core">
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/featuremodel/nightly"/>
