@@ -89,6 +89,11 @@
         <features name="org.palladiosimulator.scheduler.feature.feature.group"/>
         <features name="org.palladiosimulator.scheduler.feature.source.feature.group"/>
       </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/branding/nightly/">
+        <features name="org.palladiosimulator.license.feature.group"/>
+        <features name="org.palladiosimulator.license.epl2.feature.group"/>
+        <features name="org.palladiosimulator.branding.feature.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Luna Platform">
       <repositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/">
@@ -253,6 +258,11 @@
       <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/editors/gmf/nightly/">
         <features name="org.palladiosimulator.editors.gmf.feature.feature.group" versionRange="4.0.1.201607110911"/>
         <features name="org.palladiosimulator.editors.gmf.feature.source.feature.group" versionRange="4.0.1.201607110911"/>
+      </repositories>
+      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/branding/nightly/">
+        <features name="org.palladiosimulator.license.feature.group"/>
+        <features name="org.palladiosimulator.license.epl2.feature.group"/>
+        <features name="org.palladiosimulator.branding.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Luna Platform">
