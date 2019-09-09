@@ -1,5 +1,4 @@
-palladioBuild {
-	webserverDir = 'palladiosimulator'
-	updateSiteLocation = 'p2/final'
-	skipCodeQuality = true
+PalladioPipeline {
+    deployUpdatesite 'p2/final'
+    skipCodeQuality = true
 }
