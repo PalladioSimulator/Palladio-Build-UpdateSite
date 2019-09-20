@@ -99,7 +99,7 @@
         <features name="org.palladiosimulator.license.epl2.feature.group"/>
         <features name="org.palladiosimulator.branding.feature.feature.group"/>
       </repositories>
-      <repositories location="https://sdqweb.ipd.kit.edu/eclipse/palladio/supporting/workarounds/nightly/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workarounds/releases/latest/"/>
     </contributions>
     <contributions label="Luna Platform">
       <repositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository">
