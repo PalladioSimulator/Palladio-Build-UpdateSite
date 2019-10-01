@@ -156,7 +156,7 @@
       <repositories location="http://download.eclipse.org/modeling/emft/henshin/updates/release" mirrorArtifacts="false">
         <features name="org.eclipse.emf.henshin.sdk.feature.group"/>
       </repositories>
-      <repositories location="http://download.eclipse.org/releases/neon/" mirrorArtifacts="false">
+      <repositories location="http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/" mirrorArtifacts="false">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
     </contributions>
@@ -164,6 +164,9 @@
       <repositories location="http://download.eclipse.org/sirius/updates/releases/6.2.2/2019-06" mirrorArtifacts="false">
         <features name="org.eclipse.sirius.runtime.feature.group"/>
       </repositories>
+    </contributions>
+    <contributions label="Nebula Incubation Widgets">
+      <repositories location="http://archive.eclipse.org/nebula/Q22016/incubation/" mirrorArtifacts="false"/>
     </contributions>
     <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.12/"/>
     <validationRepositories location="http://download.eclipse.org/releases/2019-06"/>
