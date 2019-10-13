@@ -166,7 +166,9 @@
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
-      <repositories location="http://archive.eclipse.org/nebula/Q22016/incubation/" mirrorArtifacts="false"/>
+      <repositories location="http://archive.eclipse.org/nebula/Q22016/incubation/" mirrorArtifacts="false">
+        <features name="org.eclipse.nebula.incubation.feature.feature.group"/>
+      </repositories>
     </contributions>
     <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.12/"/>
     <validationRepositories location="http://download.eclipse.org/releases/2019-06"/>
