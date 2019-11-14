@@ -124,9 +124,9 @@
 								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
 							</repository>
 							<repository>
-								<id>Eclipse Photon</id>
+								<id>Eclipse 2019-09</id>
 								<layout>p2</layout>
-								<url>http://download.eclipse.org/releases/photon</url>
+								<url>http://download.eclipse.org/releases/2019-09</url>
 							</repository>
 						</repositories>
 						<jvmArgs>
