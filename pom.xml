@@ -34,7 +34,7 @@
 			<id>nightly-build</id>
 			<activation>
 				<property>
-					<name>env.DO_RELEASE_BUILD</name>
+					<name>env.RELEASE</name>
 					<value>!true</value>
 				</property>
 			</activation>
@@ -46,7 +46,7 @@
 			<id>release-build</id>
 			<activation>
 				<property>
-					<name>env.DO_RELEASE_BUILD</name>
+					<name>env.RELEASE</name>
 					<value>true</value>
 				</property>
 			</activation>
