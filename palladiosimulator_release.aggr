@@ -100,6 +100,9 @@
         <features name="org.palladiosimulator.branding.feature.feature.group"/>
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workarounds/releases/latest/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/releases/latest/">
+        <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Eclipse Orbit">
       <repositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository">
