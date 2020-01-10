@@ -160,7 +160,7 @@
       </repositories>
     </contributions>
     <contributions description="Henshin" label="Henshin">
-      <repositories location="http://download.eclipse.org/modeling/emft/henshin/updates/release" mirrorArtifacts="false">
+      <repositories location="http://download.eclipse.org/modeling/emft/henshin/updates/1.6.0" mirrorArtifacts="false">
         <features name="org.eclipse.emf.henshin.sdk.feature.group"/>
       </repositories>
       <repositories location="http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/" mirrorArtifacts="false">
