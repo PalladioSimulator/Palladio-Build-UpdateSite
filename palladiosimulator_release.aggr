@@ -178,7 +178,7 @@
       </repositories>
     </contributions>
     <contributions label="SWT Chart">
-      <repositories location="https://download.eclipse.org/swtchart/0.7.0/update/" mirrorArtifacts="false">
+      <repositories location="https://download.eclipse.org/swtchart/releases/0.7.0/update/" mirrorArtifacts="false">
         <features name="org.eclipse.swtchart.feature.feature.group"/>
       </repositories>
     </contributions>
