@@ -160,25 +160,25 @@
       </repositories>
     </contributions>
     <contributions description="Henshin" label="Henshin">
-      <repositories location="http://download.eclipse.org/modeling/emft/henshin/updates/1.6.0" mirrorArtifacts="false">
+      <repositories location="http://download.eclipse.org/modeling/emft/henshin/updates/1.6.0">
         <features name="org.eclipse.emf.henshin.sdk.feature.group"/>
       </repositories>
-      <repositories location="http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/" mirrorArtifacts="false">
+      <repositories location="http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Sirius">
-      <repositories location="http://download.eclipse.org/sirius/updates/releases/6.2.3/2019-06/" mirrorArtifacts="false">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/6.2.3/2019-06/">
         <features name="org.eclipse.sirius.runtime.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
-      <repositories location="http://archive.eclipse.org/nebula/Q22016/incubation/" mirrorArtifacts="false">
+      <repositories location="http://archive.eclipse.org/nebula/Q22016/incubation/">
         <features name="org.eclipse.nebula.incubation.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="SWT Chart">
-      <repositories location="https://download.eclipse.org/swtchart/releases/0.7.0/update/" mirrorArtifacts="false">
+      <repositories location="https://download.eclipse.org/swtchart/releases/0.7.0/update/">
         <features name="org.eclipse.swtchart.feature.feature.group"/>
       </repositories>
     </contributions>
