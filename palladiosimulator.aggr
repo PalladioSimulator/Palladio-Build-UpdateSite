@@ -103,6 +103,10 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
         <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
       </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/nightly">
+        <features name="org.palladiosimulator.cost.feature.feature.group"/>
+        <features name="org.palladiosimulator.cost.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="Eclipse Orbit">
       <repositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository">
