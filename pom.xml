@@ -9,7 +9,7 @@
 	<name>Update Site Aggregated</name>
 
 	<properties>
-		<tycho.version>1.5.1</tycho.version>
+		<tycho.version>1.7.0</tycho.version>
 	</properties>
 
 	<profiles>
@@ -122,9 +122,9 @@
 								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
 							</repository>
 							<repository>
-								<id>Eclipse 2019-09</id>
+								<id>Eclipse 2020-06</id>
 								<layout>p2</layout>
-								<url>http://download.eclipse.org/releases/2019-09</url>
+								<url>http://download.eclipse.org/releases/2020-06</url>
 							</repository>
 						</repositories>
 						<jvmArgs>
