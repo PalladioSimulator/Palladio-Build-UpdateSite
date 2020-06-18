@@ -119,12 +119,12 @@
 							<repository>
 								<id>Eclipse CBI Aggregator</id>
 								<layout>p2</layout>
-								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.8</url>
+								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.13</url>
 							</repository>
 							<repository>
 								<id>Eclipse 2020-06</id>
 								<layout>p2</layout>
-								<url>http://download.eclipse.org/releases/2020-06</url>
+								<url>http://download.eclipse.org/releases/2020-03</url>
 							</repository>
 						</repositories>
 						<jvmArgs>
