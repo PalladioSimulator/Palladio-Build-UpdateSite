@@ -11,6 +11,10 @@
         <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
         <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
       </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-yakindustatecharts/nightly/">
+        <features name="org.yakindu.base.xtext.utils.gmf.feature.group"/>
+        <features name="org.yakindu.base.xtext.utils.jface.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="QuAL">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly"/>
