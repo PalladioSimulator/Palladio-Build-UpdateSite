@@ -137,7 +137,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/releases/latest/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
       </repositories>
-      <repositories location="https://se2.informatik.uni-wuerzburg.de/eclipse/limbo/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/nightly/">
         <features name="LIMBO_DLIM.feature.group"/>
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/releases/latest/">
