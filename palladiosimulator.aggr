@@ -15,6 +15,12 @@
         <features name="org.yakindu.base.xtext.utils.gmf.feature.group"/>
         <features name="org.yakindu.base.xtext.utils.jface.feature.group"/>
       </repositories>
+      <repositories location="https://updatesite.mdsd.tools/thirdparty-library/nightly/">
+        <features name="com.google.dagger.feature.feature.group"/>
+      </repositories>
+      <repositories location="https://updatesite.mdsd.tools/build-licensefeature/nightly/">
+        <features name="tools.mdsd.license.epl2.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="QuAL">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly"/>
