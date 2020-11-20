@@ -111,7 +111,6 @@
         <features name="org.palladiosimulator.license.epl2.feature.group"/>
         <features name="org.palladiosimulator.branding.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workarounds/nightly/"/>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
         <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
       </repositories>
