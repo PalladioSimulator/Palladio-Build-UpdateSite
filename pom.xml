@@ -2,23 +2,58 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>org.palladiosimulator</groupId>
+		<artifactId>eclipse-parent-updatesite-notp</artifactId>
+		<version>0.7.3</version>
+	</parent>
 	<groupId>org.palladiosimulator.updatesite</groupId>
 	<artifactId>org.palladiosimulator.updatesite.aggregated</artifactId>
-	<version>4.3.0-SNAPSHOT</version>
+	<version>5.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Update Site Aggregated</name>
 
-	<properties>
-		<tycho.version>1.7.0</tycho.version>
-	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>target</directory>
+						</fileset>
+						<fileset>
+							<directory>updatesite-aggr</directory>
+							<includes>
+								<include>release.aggr</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>resources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<profiles>
 		<profile>
-			<id>enable-proxy</id>
+			<id>release</id>
 			<activation>
 				<property>
-					<name>env.USE_PROXY</name>
-					<value>true</value>
+					<name>release</name>
 				</property>
 			</activation>
 			<build>
@@ -26,153 +61,24 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-antrun-plugin</artifactId>
+						<version>3.0.0</version>
+						<executions>
+							<execution>
+								<phase>generate-resources</phase>
+								<configuration>
+									<target name="replace">
+										<copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr"/>
+										<replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/nightly" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
+									</target>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-		<profile>
-			<id>nightly-build</id>
-			<activation>
-				<property>
-					<name>!release</name>
-				</property>
-			</activation>
-			<properties>
-				<aggregation.file>palladiosimulator.aggr</aggregation.file>
-			</properties>
-		</profile>
-		<profile>
-			<id>release-build</id>
-			<activation>
-				<property>
-					<name>release</name>
-				</property>
-			</activation>
-			<properties>
-				<aggregation.file>palladiosimulator_release.aggr</aggregation.file>
-			</properties>
-		</profile>
 	</profiles>
-
-
-	<build>
-
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.0.0</version>
-					<executions>
-						<execution>
-							<id>workspace-clean</id>
-							<phase>clean</phase>
-							<goals>
-								<goal>clean</goal>
-							</goals>
-							<configuration>
-								<filesets>
-									<fileset>
-										<directory>workspace</directory>
-										<directory>p2</directory>
-									</fileset>
-								</filesets>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-antrun-plugin</artifactId>
-					<version>1.8</version>
-					<executions>
-						<!-- see https://wiki.eclipse.org/Tycho/Additional_Tools#tycho-eclipserun-plugin_behind_a_proxy -->
-						<execution>
-							<id>configure-proxies-for-eclipserun</id>
-							<phase>generate-resources</phase>
-							<configuration>
-								<target>
-									<touch file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true" />
-									<propertyfile file="${project.build.directory}/eclipserun-work/configuration/.settings/org.eclipse.core.net.prefs">
-										<entry key="eclipse.preferences.version" value="1" />
-										<entry key="nonProxiedHosts" value="${http.nonProxyHosts}" />
-										<entry key="org.eclipse.core.net.hasMigrated" value="true" />
-										<entry key="proxyData/HTTP/hasAuth" value="false" />
-										<entry key="proxyData/HTTP/host" value="${http.proxyHost}" />
-										<entry key="proxyData/HTTP/port" value="${http.proxyPort}" />
-										<entry key="systemProxiesEnabled" value="false" />
-									</propertyfile>
-								</target>
-							</configuration>
-							<goals>
-								<goal>run</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho.extras</groupId>
-					<artifactId>tycho-eclipserun-plugin</artifactId>
-					<version>${tycho.version}</version>
-					<configuration>
-						<repositories>
-							<repository>
-								<id>Eclipse CBI Aggregator</id>
-								<layout>p2</layout>
-								<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.13</url>
-							</repository>
-							<repository>
-								<id>Eclipse 2020-06</id>
-								<layout>p2</layout>
-								<url>http://download.eclipse.org/releases/2020-03</url>
-							</repository>
-						</repositories>
-						<jvmArgs>
-							<args>-Xmx1024m</args>
-						</jvmArgs>
-						<applicationsArgs>
-							<args>-application</args>
-							<args>org.eclipse.cbi.p2repo.cli.headless</args>
-							<args>aggregate</args>
-							<args>--buildModel</args>
-							<args>${aggregation.file}</args>
-							<args>--smtpHost</args>
-							<args>smtp.ira.uka.de</args>
-							<args>--action</args>
-							<args>BUILD</args>
-						</applicationsArgs>
-						<dependencies>
-							<dependency>
-								<artifactId>org.eclipse.cbi.p2repo.cli.product.feature</artifactId>
-								<type>eclipse-feature</type>
-							</dependency>
-							<dependency>
-								<artifactId>org.eclipse.core.net</artifactId>
-								<type>eclipse-plugin</type>
-							</dependency>
-						</dependencies>
-					</configuration>
-					<executions>
-						<execution>
-							<goals>
-								<goal>eclipse-run</goal>
-							</goals>
-							<phase>package</phase>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-clean-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho.extras</groupId>
-				<artifactId>tycho-eclipserun-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 </project>

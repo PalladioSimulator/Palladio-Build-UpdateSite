@@ -1,4 +1,4 @@
 PalladioPipeline {
-    deployUpdatesite 'p2/final'
+    deployUpdatesite 'target/classes/p2/final'
     skipQualityMetrics true
 }
