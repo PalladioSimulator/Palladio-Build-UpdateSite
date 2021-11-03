@@ -189,11 +189,6 @@
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
     </contributions>
-    <contributions label="Sirius">
-      <repositories location="https://ftp.fau.de/eclipse/sirius/updates/releases/6.4.0/2020-09/">
-        <features name="org.eclipse.sirius.runtime.feature.group"/>
-      </repositories>
-    </contributions>
     <contributions label="Nebula Incubation Widgets">
       <repositories location="https://ftp.fau.de/eclipse/nebula/incubation/snapshot/">
         <features name="org.eclipse.nebula.widgets.formattedtext.feature.feature.group"/>
@@ -221,11 +216,6 @@
       </repositories>
       <repositories location="https://ftp.fau.de/eclipse/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
-      </repositories>
-    </contributions>
-    <contributions label="Sirius">
-      <repositories location="https://ftp.fau.de/eclipse/sirius/updates/releases/6.4.2/2020-09/">
-        <features name="org.eclipse.sirius.runtime.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
@@ -258,11 +248,6 @@
       </repositories>
       <repositories location="https://ftp.fau.de/eclipse/modeling/mdt/papyrus/updates/releases/2021-03/">
         <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"/>
-      </repositories>
-    </contributions>
-    <contributions label="Sirius">
-      <repositories location="https://ftp.fau.de/eclipse/sirius/updates/releases/6.5.0/2020-09/">
-        <features name="org.eclipse.sirius.runtime.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
