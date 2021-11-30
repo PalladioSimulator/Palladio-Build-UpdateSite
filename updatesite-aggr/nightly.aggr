@@ -193,7 +193,7 @@
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
-      <repositories location="https://ftp.fau.de/eclipse/nebula/incubation/snapshot/">
+      <repositories location="https://archive.eclipse.org/nebula/Q22016/incubation/">
         <features name="org.eclipse.nebula.widgets.formattedtext.feature.feature.group"/>
       </repositories>
     </contributions>
