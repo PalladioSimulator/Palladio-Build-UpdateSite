@@ -97,6 +97,10 @@
         <features name="org.palladiosimulator.editors.tree.feature.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.editors.tree.feature.source.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-gmf/nightly/">
+        <features name="org.palladiosimulator.editors.gmf.feature.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
+        <features name="org.palladiosimulator.editors.gmf.feature.source.feature.group" versionRange="4.0.1.201607110911" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
+      </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-abstractsimengine/nightly/">
         <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
