@@ -175,20 +175,20 @@
   </validationSets>
   <validationSets label="Eclipse 2021-09" extends="//@validationSets[label='Palladio%20Features']">
     <contributions label="Eclipse Orbit">
-      <repositories location="https://ftp.fau.de/eclipse/tools/orbit/downloads/2021-09/">
+      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2021-09/">
         <bundles name="org.apache.commons.math"/>
         <bundles name="org.antlr.runtime" versionRange="[3.2.0,3.3.0)"/>
         <bundles name="javax.websocket"/>
       </repositories>
     </contributions>
     <contributions description="Henshin" label="Henshin">
-      <repositories location="https://ftp.fau.de/eclipse/modeling/emft/henshin/updates/1.6.0">
+      <repositories location="https://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/">
         <features name="org.eclipse.emf.henshin.sdk.feature.group"/>
       </repositories>
-      <repositories location="https://ftp.fau.de/eclipse/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/">
+      <repositories location="https://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
-      <repositories location="https://ftp.fau.de/eclipse/modeling/mdt/papyrus/updates/releases/2021-09/">
+      <repositories location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2021-09/">
         <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"/>
       </repositories>
     </contributions>
@@ -198,12 +198,12 @@
       </repositories>
     </contributions>
     <contributions label="SWT Chart">
-      <repositories location="https://ftp.fau.de/eclipse/swtchart/releases/0.13.0/repository">
+      <repositories location="https://download.eclipse.org/swtchart/releases/0.13.0/repository/">
         <features name="org.eclipse.swtchart.feature.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="https://ftp.fau.de/eclipse/eclipse/updates/4.21"/>
-    <validationRepositories location="https://ftp.fau.de/eclipse/releases/2021-09"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.21/"/>
+    <validationRepositories location="http://download.eclipse.org/releases/2021-09"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
