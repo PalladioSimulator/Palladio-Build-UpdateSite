@@ -169,9 +169,9 @@
       </repositories>
     </contributions>
   </validationSets>
-  <validationSets label="Eclipse 2021-09" extends="//@validationSets[label='Palladio%20Features']">
+  <validationSets label="Eclipse 2021-12" extends="//@validationSets[label='Palladio%20Features']">
     <contributions label="Eclipse Orbit">
-      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2021-09/">
+      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2021-12/">
         <bundles name="org.apache.commons.math"/>
         <bundles name="org.antlr.runtime" versionRange="[3.2.0,3.3.0)"/>
         <bundles name="javax.websocket"/>
@@ -184,7 +184,7 @@
       <repositories location="https://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
-      <repositories location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2021-09/">
+      <repositories location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2021-12/">
         <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"/>
       </repositories>
     </contributions>
@@ -198,8 +198,8 @@
         <features name="org.eclipse.swtchart.feature.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.21/"/>
-    <validationRepositories location="http://download.eclipse.org/releases/2021-09"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.22/"/>
+    <validationRepositories location="http://download.eclipse.org/releases/2021-12"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
