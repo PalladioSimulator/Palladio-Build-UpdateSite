@@ -21,6 +21,10 @@
       <repositories location="https://updatesite.mdsd.tools/build-licensefeature/nightly/">
         <features name="tools.mdsd.license.epl2.feature.group"/>
       </repositories>
+      <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/">
+        <features name="tools.mdsd.library.emfeditutils.feature.feature.group"/>
+        <features name="tools.mdsd.library.emfeditutils.feature.source.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="QuAL">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly"/>
@@ -196,6 +200,11 @@
     <contributions label="SWT Chart">
       <repositories location="https://download.eclipse.org/swtchart/releases/0.13.0/repository/">
         <features name="org.eclipse.swtchart.feature.feature.group"/>
+      </repositories>
+    </contributions>
+    <contributions label="OCL">
+      <repositories location="https://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.17.0/">
+        <features name="org.eclipse.ocl.master.feature.group"/>
       </repositories>
     </contributions>
     <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.22/"/>
