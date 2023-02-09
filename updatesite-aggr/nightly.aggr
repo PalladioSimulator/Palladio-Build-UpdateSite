@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='steffen.becker@informatik.tu-chemnitz.de']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='nicolas.boltz@kit.edu']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
   <validationSets label="Palladio Features">
     <contributions label="Palladio Commons Features">
       <repositories location="https://updatesite.palladio-simulator.com/palladio-core-commons/nightly">
@@ -176,9 +176,7 @@
   <validationSets label="Eclipse 2022-12" extends="//@validationSets[label='Palladio%20Features']">
     <contributions label="Eclipse Orbit">
       <repositories location="https://download.eclipse.org/tools/orbit/downloads/2022-12/">
-        <bundles name="org.apache.commons.math"/>
         <bundles name="org.antlr.runtime" versionRange="[3.2.0,3.3.0)"/>
-        <bundles name="javax.websocket"/>
       </repositories>
     </contributions>
     <contributions description="Henshin" label="Henshin">
@@ -207,6 +205,16 @@
         <features name="org.eclipse.ocl.examples.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.external.ocl']"/>
       </repositories>
     </contributions>
+    <contributions label="Deprecated Features">
+      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2021-12/">
+        <bundles name="org.apache.commons.math"/>
+        <bundles name="javax.websocket"/>
+        <bundles name="javax.servlet"/>
+      </repositories>
+      <repositories location="https://download.eclipse.org/releases/2021-12/202112081000">
+        <features name="org.eclipse.bpel.feature.feature.group"/>
+      </repositories>
+    </contributions>
     <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.26/"/>
     <validationRepositories location="http://download.eclipse.org/releases/2022-12"/>
   </validationSets>
@@ -220,5 +228,6 @@
   <customCategories identifier="org.palladiosimulator.deprecated.category" label="Palladio Deprecated Features" description="Palladio Deprecated Features" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.1"/>
   <customCategories identifier="org.palladiosimulator.deprecated.source.category" label="Palladio Deprecated Features Source" description="Palladio Deprecated Features Source" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.6 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.3"/>
   <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202022-12']/@contributions[label='OCL']/@repositories.0/@features.0"/>
-  <contacts name="Steffen Becker" email="steffen.becker@informatik.tu-chemnitz.de"/>
+  <contacts name="Nicolas Boltz" email="nicolas.boltz@kit.edu"/>
+  <contacts name="Larissa Schmid" email="larissa.schmid@kit.edu"/>
 </aggregator:Aggregation>
