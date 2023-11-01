@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.palladiosimulator</groupId>
 		<artifactId>eclipse-parent-updatesite-notp</artifactId>
-		<version>0.8.7</version>
+		<version>0.8.8</version>
 	</parent>
 	<groupId>org.palladiosimulator.updatesite</groupId>
 	<artifactId>org.palladiosimulator.updatesite.aggregated</artifactId>
-	<version>5.0.0-SNAPSHOT</version>
+	<version>5.2.0</version>
 	<packaging>pom</packaging>
 	<name>Update Site Aggregated</name>
 
@@ -68,7 +68,7 @@
 								<configuration>
 									<target name="replace">
 										<copy file="updatesite-aggr/nightly.aggr" toFile="updatesite-aggr/release.aggr"/>
-										<replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/nightly" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
+										<replaceregexp file="updatesite-aggr/release.aggr" match="https://updatesite.palladio-simulator.com/(.*)/branches/release5.2.0" replace="https://updatesite.palladio-simulator.com/\1/releases/latest" byline="true" />
 									</target>
 								</configuration>
 								<goals>
