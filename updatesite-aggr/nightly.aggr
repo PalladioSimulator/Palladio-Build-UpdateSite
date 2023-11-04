@@ -15,13 +15,13 @@
         <features name="org.yakindu.base.xtext.utils.gmf.feature.group"/>
         <features name="org.yakindu.base.xtext.utils.jface.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.mdsd.tools/thirdparty-library/branches/testingDay5.2.0/">
+      <repositories location="https://updatesite.mdsd.tools/thirdparty-library/nightly/">
         <features name="com.google.dagger.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.mdsd.tools/build-licensefeature/branches/testingDay5.2.0/">
+      <repositories location="https://updatesite.mdsd.tools/build-licensefeature/nightly/">
         <features name="tools.mdsd.license.epl2.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/branches/testingDay5.2.0/">
+      <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/">
         <features name="tools.mdsd.library.emfeditutils.feature.feature.group"/>
         <features name="tools.mdsd.library.emfeditutils.feature.source.feature.group"/>
       </repositories>
@@ -119,7 +119,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/branches/testingDay5.2.0/">
         <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/branches/testingDay5.2.0">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/releases/latest/">
         <features name="org.palladiosimulator.cost.feature.feature.group"/>
         <features name="org.palladiosimulator.cost.feature.source.feature.group"/>
       </repositories>
@@ -227,7 +227,7 @@
   <customCategories identifier="org.palladiosimulator.addons.source.category" label="Palladio Bench Addons Sources" description="Palladio Bench Addons Sources" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.7 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.8 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.9 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.7/@features.1"/>
   <customCategories identifier="org.palladiosimulator.deprecated.category" label="Palladio Deprecated Features" description="Palladio Deprecated Features" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.1"/>
   <customCategories identifier="org.palladiosimulator.deprecated.source.category" label="Palladio Deprecated Features Source" description="Palladio Deprecated Features Source" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.6 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.3"/>
-  <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202022-12']/@contributions[label='OCL']/@repositories.0/@features.0"/>
+  <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202023-03']/@contributions[label='OCL']/@repositories.0/@features.0"/>
   <contacts name="Nicolas Boltz" email="nicolas.boltz@kit.edu"/>
   <contacts name="Larissa Schmid" email="larissa.schmid@kit.edu"/>
 </aggregator:Aggregation>
