@@ -143,7 +143,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/releases/latest/">
         <features name="LIMBO_DLIM.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/branches/testingDay5.2.0/">
+      <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/nightly/">
         <features name="de.mdelab.sdm.interpreter.common.feature.feature.group" versionRange="1.0.0.201506210818"/>
         <features name="de.mdelab.sdm.interpreter.core.feature.feature.group" versionRange="1.0.0.201506210818"/>
         <features name="org.storydriven.storydiagrams.buckminster.feature.group" versionRange="1.0.0.201506210818-521cNN8n-7MAGeAkMGAwGw"/>
