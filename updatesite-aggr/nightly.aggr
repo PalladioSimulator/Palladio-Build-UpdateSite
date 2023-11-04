@@ -140,7 +140,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/branches/testingDay5.2.0/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/branches/testingDay5.2.0/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/releases/latest/">
         <features name="LIMBO_DLIM.feature.group"/>
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/branches/testingDay5.2.0/">
