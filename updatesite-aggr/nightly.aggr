@@ -193,20 +193,20 @@
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.generator.fluent.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
+      <repositories enabled="false" location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
         <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
         <features name="org.palladiosimulator.somox.ast2seff.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
-        <features name="org.palladiosimulator.retriever.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.retriever.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories enabled="false" location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
+        <features name="org.palladiosimulator.retriever.feature.feature.group" enabled="false" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
+        <features name="org.palladiosimulator.retriever.feature.source.feature.group" enabled="false" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
+      <repositories enabled="false" location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
         <features name="org.somox.core.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="org.somox.core.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
+      <repositories enabled="false" location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
+      <repositories enabled="false" location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/"/>
     </contributions>
   </validationSets>
