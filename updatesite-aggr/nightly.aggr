@@ -1,280 +1,462 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='nicolas.boltz@kit.edu']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+  xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0"
+  buildmaster="//@contacts[email='nicolas.boltz@kit.edu']" label="Palladio Simulator P2 Repositoy"
+  buildRoot="./p2" packedStrategy="UNPACK">
   <validationSets label="Palladio Features">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-core-commons/nightly">
-        <features name="org.palladiosimulator.commons.feature.feature.group"/>
-        <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-core-commons/nightly">
+        <features name="org.palladiosimulator.commons.feature.feature.group" />
+        <features name="org.palladiosimulator.commons.feature.source.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
-        <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
-        <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
-        <features name="com.github.jsqlparser.feature.feature.group"/>
-        <features name="com.github.jsqlparser.feature.source.feature.group"/>
-        <features name="org.openjdk.nashorn.feature.feature.group"/>
-        <features name="org.openjdk.nashorn.feature.source.feature.group"/>
-        <features name="org.jgrapht.feature.feature.group"/>
-        <features name="org.jgrapht.io.feature.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
+        <features name="ca.umontreal.iro.ssj.feature.feature.group" />
+        <features name="ca.umontreal.iro.ssj.feature.source.feature.group" />
+        <features name="com.github.jsqlparser.feature.feature.group" />
+        <features name="com.github.jsqlparser.feature.source.feature.group" />
+        <features name="org.openjdk.nashorn.feature.feature.group" />
+        <features name="org.openjdk.nashorn.feature.source.feature.group" />
+        <features name="org.jgrapht.feature.feature.group" />
+        <features name="org.jgrapht.io.feature.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-yakindustatecharts/nightly/">
-        <features name="org.yakindu.base.xtext.utils.gmf.feature.group"/>
-        <features name="org.yakindu.base.xtext.utils.jface.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-thirdparty-yakindustatecharts/nightly/">
+        <features name="org.yakindu.base.xtext.utils.gmf.feature.group" />
+        <features name="org.yakindu.base.xtext.utils.jface.feature.group" />
       </repositories>
       <repositories location="https://updatesite.mdsd.tools/thirdparty-library/nightly/">
-        <features name="com.google.dagger.feature.feature.group"/>
+        <features name="com.google.dagger.feature.feature.group" />
       </repositories>
       <repositories location="https://updatesite.mdsd.tools/build-licensefeature/nightly/">
-        <features name="tools.mdsd.license.epl2.feature.group"/>
+        <features name="tools.mdsd.license.epl2.feature.group" />
       </repositories>
       <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/">
-        <features name="tools.mdsd.library.emfeditutils.feature.feature.group"/>
-        <features name="tools.mdsd.library.emfeditutils.feature.source.feature.group"/>
+        <features name="tools.mdsd.library.emfeditutils.feature.feature.group" />
+        <features name="tools.mdsd.library.emfeditutils.feature.source.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.mdsd.tools/library-modelcompositionrefinement/nightly/">
-        <features name="tools.mdsd.mocore.feature.feature.group"/>
-        <features name="tools.mdsd.mocore.license.source.feature.group"/>
+      <repositories
+        location="https://updatesite.mdsd.tools/library-modelcompositionrefinement/nightly/">
+        <features name="tools.mdsd.mocore.feature.feature.group" />
+        <features name="tools.mdsd.mocore.license.source.feature.group" />
       </repositories>
       <repositories location="https://updatesite.mdsd.tools/jamopp/nightly/">
-        <features name="tools.mdsd.jamopp.feature.feature.group"/>
-        <features name="tools.mdsd.jamopp.feature.source.feature.group"/>
+        <features name="tools.mdsd.jamopp.feature.feature.group" />
+        <features name="tools.mdsd.jamopp.feature.source.feature.group" />
       </repositories>
     </contributions>
     <contributions label="QuAL">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-metricspecification/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-edp2/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-sensorframework/nightly">
-        <features name="de.uka.ipd.sdq.sensorframework.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="de.uka.ipd.sdq.sensorframework.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
-        <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-metricspecification/nightly" />
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-edp2/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-sensorframework/nightly">
+        <features name="de.uka.ipd.sdq.sensorframework.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features name="de.uka.ipd.sdq.sensorframework.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
+        <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-probeframework/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-recorderframework/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-experimentanalysis/nightly/">
-        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
-        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-probeframework/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-recorderframework/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-experimentanalysis/nightly/">
+        <features name="org.palladiosimulator.experimentanalysis.feature.feature.group" />
+        <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group" />
       </repositories>
     </contributions>
     <contributions label="Palladio Core">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/nightly"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/nightly/">
-        <features name="org.modelversioning.emfprofile.feature.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/nightly" />
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/nightly/">
+        <features name="org.modelversioning.emfprofile.feature.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-monitorrepository/nightly"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-qual-monitorrepository/nightly" />
       <repositories location="https://updatesite.palladio-simulator.com/palladio-core-pcm/nightly/">
-        <features name="org.palladiosimulator.pcm.feature.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.pcm.feature.source.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
-        <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+        <features name="org.palladiosimulator.pcm.feature.feature.group"
+          versionRange="1.0.0.201506251444"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.pcm.feature.source.feature.group"
+          versionRange="1.0.0.201506251444"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
+        <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-sirius/nightly/">
-        <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.sirius.feature.source.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-editors-sirius/nightly/">
+        <features name="org.palladiosimulator.editors.sirius.feature.feature.group"
+          versionRange="1.0.0.201506241854"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.editors.sirius.feature.source.feature.group"
+          versionRange="1.0.0.201506241854"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/nightly/">
-        <features name="org.palladiosimulator.analyzer.feature.feature.group" versionRange="1.0.0.201506251525"/>
-        <features name="org.palladiosimulator.analyzer.feature.source.feature.group" versionRange="1.0.0.201506251525"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/nightly/">
+        <features name="org.palladiosimulator.analyzer.feature.feature.group"
+          versionRange="1.0.0.201506251525" />
+        <features name="org.palladiosimulator.analyzer.feature.source.feature.group"
+          versionRange="1.0.0.201506251525" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-protocom/nightly/">
-        <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.protocom.javaee.feature.source.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
-        <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-protocom/nightly/">
+        <features name="org.palladiosimulator.protocom.feature.feature.group"
+          versionRange="4.0.0.201506252055"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.protocom.javaee.feature.feature.group"
+          versionRange="1.0.0.201506252055"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.protocom.javaee.feature.source.feature.group"
+          versionRange="1.0.0.201506252055"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
+        <features name="org.palladiosimulator.protocom.feature.source.feature.group"
+          versionRange="4.0.0.201506252055"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-reliability/nightly/">
-        <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.reliability.feature.source.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-reliability/nightly/">
+        <features name="org.palladiosimulator.reliability.feature.feature.group"
+          versionRange="1.0.0.201506251319"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.reliability.feature.source.feature.group"
+          versionRange="1.0.0.201506251319"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simucom/nightly/">
-        <features name="org.palladiosimulator.simucom.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="org.palladiosimulator.simucom.feature.source.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-simucom/nightly/">
+        <features name="org.palladiosimulator.simucom.feature.feature.group"
+          versionRange="4.0.0.201506251820"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features name="org.palladiosimulator.simucom.feature.source.feature.group"
+          versionRange="4.0.0.201506251820"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-solver/nightly/">
-        <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.solver.feature.source.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-solver/nightly/">
+        <features name="org.palladiosimulator.solver.feature.feature.group"
+          versionRange="4.0.0.201506251421"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.solver.feature.source.feature.group"
+          versionRange="4.0.0.201506251421"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-peropteryx/nightly/">
-        <features name="de.uka.ipd.sdq.dsexplore.feature.feature.group" versionRange="3.3.0.201506251851" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="de.uka.ipd.sdq.dsexplore.feature.source.feature.group" versionRange="3.3.0.201506251851" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-peropteryx/nightly/">
+        <features name="de.uka.ipd.sdq.dsexplore.feature.feature.group"
+          versionRange="3.3.0.201506251851"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="de.uka.ipd.sdq.dsexplore.feature.source.feature.group"
+          versionRange="3.3.0.201506251851"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addon-architecturaltemplates/nightly/">
-        <features name="org.palladiosimulator.architecturaltemplates.feature.feature.group"/>
-        <features name="org.palladiosimulator.architecturaltemplates.examples.feature.feature.group"/>
-        <features name="org.palladiosimulator.architecturaltemplates.examples.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.architecturaltemplates.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addon-architecturaltemplates/nightly/">
+        <features name="org.palladiosimulator.architecturaltemplates.feature.feature.group" />
+        <features name="org.palladiosimulator.architecturaltemplates.examples.feature.feature.group" />
+        <features
+          name="org.palladiosimulator.architecturaltemplates.examples.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features name="org.palladiosimulator.architecturaltemplates.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-commons/nightly/">
-        <features name="org.palladiosimulator.editors.commons.feature.feature.group" versionRange="1.0.0.201607200731" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.commons.feature.source.feature.group" versionRange="1.0.0.201607200731" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-editors-commons/nightly/">
+        <features name="org.palladiosimulator.editors.commons.feature.feature.group"
+          versionRange="1.0.0.201607200731"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.editors.commons.feature.source.feature.group"
+          versionRange="1.0.0.201607200731"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-tree/nightly/">
-        <features name="org.palladiosimulator.editors.tree.feature.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.editors.tree.feature.source.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-editors-tree/nightly/">
+        <features name="org.palladiosimulator.editors.tree.feature.feature.group"
+          versionRange="4.0.1.201607200503"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features name="org.palladiosimulator.editors.tree.feature.source.feature.group"
+          versionRange="4.0.1.201607200503"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-abstractsimengine/nightly/">
-        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
-        <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-simulation-abstractsimengine/nightly/">
+        <features
+          name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features
+          name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
+        <features
+          name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']" />
+        <features
+          name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-scheduler/nightly/">
-        <features name="org.palladiosimulator.scheduler.feature.feature.group"/>
-        <features name="org.palladiosimulator.scheduler.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-simulation-scheduler/nightly/">
+        <features name="org.palladiosimulator.scheduler.feature.feature.group" />
+        <features name="org.palladiosimulator.scheduler.feature.source.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-branding/nightly/">
-        <features name="org.palladiosimulator.license.feature.group"/>
-        <features name="org.palladiosimulator.license.epl2.feature.group"/>
-        <features name="org.palladiosimulator.branding.feature.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-supporting-branding/nightly/">
+        <features name="org.palladiosimulator.license.feature.group" />
+        <features name="org.palladiosimulator.license.epl2.feature.group" />
+        <features name="org.palladiosimulator.branding.feature.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
-        <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
+        <features name="org.palladiosimulator.examples.package.feature.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/nightly">
-        <features name="org.palladiosimulator.cost.feature.feature.group"/>
-        <features name="org.palladiosimulator.cost.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/nightly">
+        <features name="org.palladiosimulator.cost.feature.feature.group" />
+        <features name="org.palladiosimulator.cost.feature.source.feature.group" />
       </repositories>
     </contributions>
     <contributions label="PCM Addons">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-servicelevelobjectives/nightly/">
-        <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-servicelevelobjectives/nightly/">
+        <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group"
+          versionRange="1.0.0.201506181816"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group"
+          versionRange="1.0.0.201506181816"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly/">
-        <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.source.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.source.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.simulizar.feature.source.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly/">
+        <features name="org.palladiosimulator.simulizar.feature.feature.group"
+          versionRange="2.0.0.201506191800-8U_-EFHcPueBA"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.feature.group"
+          versionRange="1.0.0.201506191800"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features
+          name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.feature.group"
+          versionRange="1.0.0.201506191800"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features
+          name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.source.feature.group"
+          versionRange="1.0.0.201506191800"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features
+          name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.source.feature.group"
+          versionRange="1.0.0.201506191800"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features name="org.palladiosimulator.simulizar.feature.source.feature.group"
+          versionRange="2.0.0.201506191800-8U_-EFHcPueBA"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/nightly/">
-        <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/nightly/">
+        <features name="org.scaledl.usageevolution.feature.feature.group"
+          versionRange="1.0.0.201506260057"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/nightly/">
-        <features name="LIMBO_DLIM.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-p2mirror-dlim/nightly/">
+        <features name="LIMBO_DLIM.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/nightly/">
-        <features name="de.mdelab.sdm.interpreter.common.feature.feature.group" versionRange="1.0.0.201506210818"/>
-        <features name="de.mdelab.sdm.interpreter.core.feature.feature.group" versionRange="1.0.0.201506210818"/>
-        <features name="org.storydriven.storydiagrams.buckminster.feature.group" versionRange="1.0.0.201506210818-521cNN8n-7MAGeAkMGAwGw"/>
-        <features name="org.storydriven.storydiagrams.diagram.feature.feature.group" versionRange="1.0.1.201506210818"/>
-        <features name="org.storydriven.storydiagrams.editor.feature.feature.group" versionRange="1.0.1.201506210818"/>
-        <features name="org.storydriven.storydiagrams.interpreter.feature.feature.group" versionRange="1.0.1.201506210818"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/nightly/">
+        <features name="de.mdelab.sdm.interpreter.common.feature.feature.group"
+          versionRange="1.0.0.201506210818" />
+        <features name="de.mdelab.sdm.interpreter.core.feature.feature.group"
+          versionRange="1.0.0.201506210818" />
+        <features name="org.storydriven.storydiagrams.buckminster.feature.group"
+          versionRange="1.0.0.201506210818-521cNN8n-7MAGeAkMGAwGw" />
+        <features name="org.storydriven.storydiagrams.diagram.feature.feature.group"
+          versionRange="1.0.1.201506210818" />
+        <features name="org.storydriven.storydiagrams.editor.feature.feature.group"
+          versionRange="1.0.1.201506210818" />
+        <features name="org.storydriven.storydiagrams.interpreter.feature.feature.group"
+          versionRange="1.0.1.201506210818" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-experimentautomation/nightly/">
-        <features name="org.palladiosimulator.experimentautomation.application.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.examples.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.examples.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
-        <features name="org.palladiosimulator.experimentautomation.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-experimentautomation/nightly/">
+        <features
+          name="org.palladiosimulator.experimentautomation.application.feature.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.experimentautomation.examples.feature.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.experimentautomation.feature.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.application.feature.source.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.source.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.source.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features
+          name="org.palladiosimulator.experimentautomation.examples.feature.source.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
+        <features name="org.palladiosimulator.experimentautomation.feature.source.feature.group"
+          versionRange="1.0.0.201506182016"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-simucomexactschedulers/nightly/">
-        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.source.feature.group" versionRange="1.0.0.201506211129" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-simucomexactschedulers/nightly/">
+        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group"
+          versionRange="1.0.0.201506211112"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.source.feature.group"
+          versionRange="1.0.0.201506211129"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-measurementsui/nightly/">
-        <features name="org.palladiosimulator.measurementsui.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.measurementsui.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-measurementsui/nightly/">
+        <features name="org.palladiosimulator.measurementsui.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.measurementsui.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
-        <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
-        <features name="org.palladiosimulator.view.plantuml.generator.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
+        <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group" />
+        <features name="org.palladiosimulator.view.plantuml.generator.feature.source.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
-        <features name="org.palladiosimulator.generator.fluent.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.generator.fluent.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
+        <features name="org.palladiosimulator.generator.fluent.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.generator.fluent.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
-        <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
-        <features name="org.palladiosimulator.somox.ast2seff.feature.source.feature.group"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
+        <features name="org.palladiosimulator.retriever.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.category']" />
+        <features name="org.palladiosimulator.retriever.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
-        <features name="org.palladiosimulator.retriever.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
-        <features name="org.palladiosimulator.retriever.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
+      <repositories
+        location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
+        <features name="org.somox.core.feature.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']" />
+        <features name="org.somox.core.feature.source.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']" />
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
-        <features name="org.somox.core.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
-        <features name="org.somox.core.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
-      </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/"/>
     </contributions>
+    <validationRepositories
+      location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/" />
+    <validationRepositories
+      location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/" />
+    <validationRepositories
+      location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/" />
+    <validationRepositories
+      location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/" />
+    <validationRepositories
+      location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/" />
   </validationSets>
   <validationSets label="Eclipse 2023-03" extends="//@validationSets[label='Palladio%20Features']">
-    <contributions label="Eclipse Orbit">
-      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2023-03/">
-        <bundles name="org.antlr.runtime" versionRange="[3.2.0,3.3.0)"/>
-        <bundles name="org.jdom2"/>
-        <bundles name="org.apache.commons.csv"/>
-        <bundles name="org.apache.commons.cli"/>
-        <bundles name="org.yaml.snakeyaml"/>
-        <bundles name="org.apache.commons.io"/>
-        <bundles name="com.google.gson"/>
-        <bundles name="org.apache.commons.compress"/>
-      </repositories>
-      <repositories location="https://download.eclipse.org/releases/2022-12/">
-        <bundles name="org.json"/>
-      </repositories>
-    </contributions>
     <contributions label="Henshin">
       <repositories location="https://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/">
-        <features name="org.eclipse.emf.henshin.sdk.feature.group"/>
+        <features name="org.eclipse.emf.henshin.sdk.feature.group" />
       </repositories>
-      <repositories location="https://updatesite.mdsd.tools/thirdparty-gmf-tooling/updates/releases-3.3.1a/">
-        <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
+      <repositories
+        location="https://updatesite.mdsd.tools/thirdparty-gmf-tooling/updates/releases-3.3.1a/">
+        <features name="org.eclipse.gmf.tooling.runtime.feature.group" />
       </repositories>
-      <repositories location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2023-03/">
-        <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"/>
+      <repositories
+        location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2023-03/">
+        <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime" />
       </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
       <repositories location="https://archive.eclipse.org/nebula/Q22016/incubation/">
-        <features name="org.eclipse.nebula.widgets.formattedtext.feature.feature.group"/>
+        <features name="org.eclipse.nebula.widgets.formattedtext.feature.feature.group" />
       </repositories>
     </contributions>
     <contributions label="SWT Chart">
       <repositories location="https://download.eclipse.org/swtchart/releases/0.13.0/repository/">
-        <features name="org.eclipse.swtchart.feature.feature.group"/>
+        <features name="org.eclipse.swtchart.feature.feature.group" />
       </repositories>
     </contributions>
     <contributions label="OCL">
-      <repositories location="https://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.17.0/">
-        <features name="org.eclipse.ocl.examples.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.external.ocl']"/>
+      <repositories
+        location="https://download.eclipse.org/modeling/mdt/ocl/updates/releases/6.17.0/">
+        <features name="org.eclipse.ocl.examples.feature.group"
+          categories="//@customCategories[identifier='org.palladiosimulator.external.ocl']" />
       </repositories>
     </contributions>
     <contributions label="Deprecated Features">
       <repositories location="https://download.eclipse.org/tools/orbit/downloads/2021-12/">
-        <bundles name="org.apache.commons.math"/>
-        <bundles name="javax.websocket"/>
-        <bundles name="javax.servlet"/>
+        <bundles name="org.apache.commons.math" />
+        <bundles name="javax.websocket" />
+        <bundles name="javax.servlet" />
       </repositories>
       <repositories location="https://download.eclipse.org/releases/2021-12/202112081000">
-        <features name="org.eclipse.bpel.feature.feature.group"/>
+        <features name="org.eclipse.bpel.feature.feature.group" />
+      </repositories>
+      <repositories location="https://download.eclipse.org/releases/2022-12/">
+        <bundles name="org.json" />
       </repositories>
     </contributions>
-    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.27/"/>
-    <validationRepositories location="http://download.eclipse.org/releases/2023-03"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.27/" />
+    <validationRepositories location="http://download.eclipse.org/releases/2023-03" />
+    <validationRepositories location="https://download.eclipse.org/tools/orbit/downloads/2023-03/" />
   </validationSets>
-  <configurations architecture="x86_64"/>
-  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
-  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
-  <customCategories identifier="org.palladiosimulator.corefeatures.category" label="Palladio Bench Core Features" description="This category contains all features which belong to a complete installation of the Palladio Bench Core Features" features="//@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.11/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.9/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.12/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.14/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.15/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.2"/>
-  <customCategories identifier="org.palladiosimulator.core.source.category" label="Palladio Bench Core Features Sources" description="Palladio Bench Core Features Sources" features="//@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.11/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.9/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.12/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.14/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.15/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.3"/>
-  <customCategories identifier="org.palladiosimulator.addons.category" label="Palladio Bench Addons" description="Palladio Bench Addons" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.2/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.7/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.9/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.0"/>
-  <customCategories identifier="org.palladiosimulator.addons.source.category" label="Palladio Bench Addons Sources" description="Palladio Bench Addons Sources" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.7 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.8 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.9 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.7/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.9/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.1"/>
-  <customCategories identifier="org.palladiosimulator.deprecated.category" label="Palladio Deprecated Features" description="Palladio Deprecated Features" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.12/@features.0"/>
-  <customCategories identifier="org.palladiosimulator.deprecated.source.category" label="Palladio Deprecated Features Source" description="Palladio Deprecated Features Source" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.6 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.12/@features.1"/>
-  <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202023-03']/@contributions[label='OCL']/@repositories.0/@features.0"/>
-  <contacts name="Nicolas Boltz" email="nicolas.boltz@kit.edu"/>
-  <contacts name="Larissa Schmid" email="larissa.schmid@kit.edu"/>
+  <configurations architecture="x86_64" />
+  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64" />
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64" />
+  <customCategories identifier="org.palladiosimulator.corefeatures.category"
+    label="Palladio Bench Core Features"
+    description="This category contains all features which belong to a complete installation of the Palladio Bench Core Features"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.11/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.9/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.12/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.14/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.15/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.2" />
+  <customCategories identifier="org.palladiosimulator.core.source.category"
+    label="Palladio Bench Core Features Sources" description="Palladio Bench Core Features Sources"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.11/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.9/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.12/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.8/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.14/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.15/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.16/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.5/@features.3" />
+  <customCategories identifier="org.palladiosimulator.addons.category" label="Palladio Bench Addons"
+    description="Palladio Bench Addons"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.2/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.7/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.9/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.10/@features.0" />
+  <customCategories identifier="org.palladiosimulator.addons.source.category"
+    label="Palladio Bench Addons Sources" description="Palladio Bench Addons Sources"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.7 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.8 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.9 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.7/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.9/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.10/@features.1" />
+  <customCategories identifier="org.palladiosimulator.deprecated.category"
+    label="Palladio Deprecated Features" description="Palladio Deprecated Features"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.0" />
+  <customCategories identifier="org.palladiosimulator.deprecated.source.category"
+    label="Palladio Deprecated Features Source" description="Palladio Deprecated Features Source"
+    features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.6 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.1" />
+  <customCategories identifier="org.palladiosimulator.external.ocl"
+    label="Eclipse OCL (LPG version)" description="Palladio External Resources"
+    features="//@validationSets[label='Eclipse%202023-03']/@contributions[label='OCL']/@repositories.0/@features.0" />
+  <contacts name="Nicolas Boltz" email="nicolas.boltz@kit.edu" />
+  <contacts name="Larissa Schmid" email="larissa.schmid@kit.edu" />
 </aggregator:Aggregation>
