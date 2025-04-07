@@ -208,6 +208,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-limbo/nightly/"/>
     </contributions>
   </validationSets>
   <validationSets label="Eclipse 2023-03" extends="//@validationSets[label='Palladio%20Features']">
