@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.palladiosimulator</groupId>
-		<artifactId>eclipse-parent-updatesite-notp</artifactId>
-		<version>0.9.0</version>
+		<artifactId>eclipse-parent</artifactId>
+		<version>0.10.0</version>
 	</parent>
 	<groupId>org.palladiosimulator.updatesite</groupId>
 	<artifactId>org.palladiosimulator.updatesite.aggregated</artifactId>
@@ -14,7 +14,19 @@
 	<packaging>pom</packaging>
 	<name>Update Site Aggregated</name>
 
+	<properties>
+		<updatesite.aggregator.smtpHost>smtp.ira.uka.de</updatesite.aggregator.smtpHost>
+		<checkstyle.version>8.29</checkstyle.version>
+		<org.palladiosimulator.dependencies.branding-version>2.1.0</org.palladiosimulator.dependencies.branding-version>
+	</properties>
+
 	<build>
+		<resources>
+			<resource>
+				<directory>updatesite-aggr</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
@@ -46,10 +58,114 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-eclipserun-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<applicationsArgs>
+						<args>-data</args>
+						<args>${project.build.directory}/eclipserun-work/</args>
+						<args>-application</args>
+						<args>org.eclipse.cbi.p2repo.cli.headless</args>
+						<args>aggregate</args>
+						<args>--buildModel</args>
+						<args>${updatesite.aggregator.filename}</args>^
+						<args>--smtpHost</args>
+						<args>${updatesite.aggregator.smtpHost}</args>
+						<args>--action</args>
+						<args>BUILD</args>
+					</applicationsArgs>
+					<dependencies>
+						<dependency>
+							<artifactId>org.eclipse.cbi.p2repo.aggregator.engine.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.core.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.core.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.core.net</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+					</dependencies>
+					<repositories>
+						<repository>
+							<id>cbi-aggregator</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.13/</url>
+						</repository>
+						<repository>
+							<id>Eclipse 2021-12</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/releases/2021-12</url>
+						</repository>
+					</repositories>
+					<work>${project.build.directory}/eclipserun-work</work>
+					<executionEnvironment>JavaSE-17</executionEnvironment>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.6.0</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.puppycrawl.tools</groupId>
+						<artifactId>checkstyle</artifactId>
+						<version>${checkstyle.version}</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<id>palladio-checkstyle</id>
+						<phase>package</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<configLocation>https://raw.githubusercontent.com/PalladioSimulator/Palladio-Build-CodingConventions/master/misc/org.palladiosimulator.codeconventions/palladio-checkstyle-rules-${checkstyle.version}.xml</configLocation>
+							<failOnViolation>false</failOnViolation>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>palladio-branding</id>
+			<layout>p2</layout>
+			<url>https://updatesite.palladio-simulator.com/palladio-supporting-branding/releases/${org.palladiosimulator.dependencies.branding-version}/</url>
+		</repository>
+	</repositories>
+
 	<profiles>
+		<profile>
+			<id>nightly</id>
+			<activation>
+				<property>
+					<name>!release</name>
+				</property>
+			</activation>
+			<properties>
+				<updatesite.aggregator.filename>target/classes/nightly.aggr</updatesite.aggregator.filename>
+			</properties>
+		</profile>
 		<profile>
 			<id>release</id>
 			<activation>
@@ -57,6 +173,9 @@
 					<name>release</name>
 				</property>
 			</activation>
+			<properties>
+				<updatesite.aggregator.filename>target/classes/release.aggr</updatesite.aggregator.filename>
+			</properties>
 			<build>
 				<plugins>
 					<plugin>
