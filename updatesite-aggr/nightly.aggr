@@ -133,7 +133,7 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
         <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/releases/5.1.0/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/nightly/">
         <features name="org.palladiosimulator.cost.feature.feature.group"/>
         <features name="org.palladiosimulator.cost.feature.source.feature.group"/>
       </repositories>
