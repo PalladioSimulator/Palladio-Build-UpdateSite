@@ -2,12 +2,12 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" buildmaster="//@contacts[email='nicolas.boltz@kit.edu']" label="Palladio Simulator P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
   <validationSets label="Palladio Features">
     <contributions label="Palladio Commons Features">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-core-commons/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-core-commons/releases/5.2.2/">
         <features name="org.palladiosimulator.commons.feature.feature.group"/>
         <features name="org.palladiosimulator.commons.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-wrapper/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-library/releases/5.2.2/">
         <features name="ca.umontreal.iro.ssj.feature.feature.group"/>
         <features name="ca.umontreal.iro.ssj.feature.source.feature.group"/>
         <features name="com.github.jsqlparser.feature.feature.group"/>
@@ -41,109 +41,109 @@
       </repositories>
     </contributions>
     <contributions label="QuAL">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-metricspecification/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-edp2/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-sensorframework/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-measurementframework/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-metricspecification/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-edp2/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-sensorframework/releases/5.2.2/">
         <features name="de.uka.ipd.sdq.sensorframework.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="de.uka.ipd.sdq.sensorframework.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
         <features name="de.uka.ipd.sdq.sensorframework.visualisation.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-probeframework/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-recorderframework/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-experimentanalysis/nightly//">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-probeframework/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-recorderframework/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-experimentanalysis/releases/5.2.2//">
         <features name="org.palladiosimulator.experimentanalysis.feature.feature.group"/>
         <features name="org.palladiosimulator.experimentanalysis.feature.source.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Palladio Core">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/nightly//">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-featuremodel/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-workflowengine/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-mdsdprofiles/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/releases/5.2.2//">
         <features name="org.modelversioning.emfprofile.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-monitorrepository/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-core-pcm/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-qual-monitorrepository/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-core-pcm/releases/5.2.2/">
         <features name="org.palladiosimulator.pcm.feature.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.pcm.feature.source.feature.group" versionRange="1.0.0.201506251444" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
         <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.pcm.edp2.measuringpoint.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-sirius/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-sirius/releases/5.2.2/">
         <features name="org.palladiosimulator.editors.sirius.feature.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.editors.sirius.feature.source.feature.group" versionRange="1.0.0.201506241854" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-framework/releases/5.2.2/">
         <features name="org.palladiosimulator.analyzer.feature.feature.group" versionRange="1.0.0.201506251525"/>
         <features name="org.palladiosimulator.analyzer.feature.source.feature.group" versionRange="1.0.0.201506251525"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-protocom/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-protocom/releases/5.2.2/">
         <features name="org.palladiosimulator.protocom.feature.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.protocom.javaee.feature.source.feature.group" versionRange="1.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
         <features name="org.palladiosimulator.protocom.feature.source.feature.group" versionRange="4.0.0.201506252055" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-reliability/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-reliability/releases/5.2.2/">
         <features name="org.palladiosimulator.reliability.feature.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.reliability.feature.source.feature.group" versionRange="1.0.0.201506251319" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simucom/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simucom/releases/5.2.2/">
         <features name="org.palladiosimulator.simucom.feature.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="org.palladiosimulator.simucom.feature.source.feature.group" versionRange="4.0.0.201506251820" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-solver/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-solver/releases/5.2.2/">
         <features name="org.palladiosimulator.solver.feature.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.solver.feature.source.feature.group" versionRange="4.0.0.201506251421" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-peropteryx/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-peropteryx/releases/5.2.2/">
         <features name="de.uka.ipd.sdq.dsexplore.feature.feature.group" versionRange="3.3.0.201506251851" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="de.uka.ipd.sdq.dsexplore.feature.source.feature.group" versionRange="3.3.0.201506251851" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addon-architecturaltemplates/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addon-architecturaltemplates/releases/5.2.2/">
         <features name="org.palladiosimulator.architecturaltemplates.feature.feature.group"/>
         <features name="org.palladiosimulator.architecturaltemplates.examples.feature.feature.group"/>
         <features name="org.palladiosimulator.architecturaltemplates.examples.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
         <features name="org.palladiosimulator.architecturaltemplates.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-commons/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-commons/releases/5.2.2/">
         <features name="org.palladiosimulator.editors.commons.feature.feature.group" versionRange="1.0.0.201607200731" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.editors.commons.feature.source.feature.group" versionRange="1.0.0.201607200731" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-tree/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-editors-tree/releases/5.2.2/">
         <features name="org.palladiosimulator.editors.tree.feature.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.editors.tree.feature.source.feature.group" versionRange="4.0.1.201607200503" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-abstractsimengine/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-abstractsimengine/releases/5.2.2/">
         <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
         <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.corefeatures.category']"/>
         <features name="org.palladiosimulator.simulation.abstractsimengine.ssj.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.core.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-scheduler/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-simulation-scheduler/releases/5.2.2/">
         <features name="org.palladiosimulator.scheduler.feature.feature.group"/>
         <features name="org.palladiosimulator.scheduler.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-branding/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-supporting-branding/releases/5.2.2/">
         <features name="org.palladiosimulator.license.feature.group"/>
         <features name="org.palladiosimulator.license.epl2.feature.group"/>
         <features name="org.palladiosimulator.branding.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-example-models-package/releases/5.2.2/">
         <features name="org.palladiosimulator.examples.package.feature.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-costefficiency/releases/5.2.2/">
         <features name="org.palladiosimulator.cost.feature.feature.group"/>
         <features name="org.palladiosimulator.cost.feature.source.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="PCM Addons">
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-servicelevelobjectives/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-servicelevelobjectives/releases/5.2.2/">
         <features name="org.palladiosimulator.servicelevelobjective.feature.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.servicelevelobjective.feature.source.feature.group" versionRange="1.0.0.201506181816" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/releases/5.2.2/">
         <features name="org.palladiosimulator.simulizar.feature.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.qvto.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
@@ -151,7 +151,7 @@
         <features name="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature.source.feature.group" versionRange="1.0.0.201506191800" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
         <features name="org.palladiosimulator.simulizar.feature.source.feature.group" versionRange="2.0.0.201506191800-8U_-EFHcPueBA" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-cloudscaleusageevolution/releases/5.2.2/">
         <features name="org.scaledl.usageevolution.feature.feature.group" versionRange="1.0.0.201506260057" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/archive/storydiagraminterpreter/releases/1.1.0/">
@@ -162,7 +162,7 @@
         <features name="org.storydriven.storydiagrams.editor.feature.feature.group" versionRange="1.0.1.201506210818"/>
         <features name="org.storydriven.storydiagrams.interpreter.feature.feature.group" versionRange="1.0.1.201506210818"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-experimentautomation/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-experimentautomation/releases/5.2.2/">
         <features name="org.palladiosimulator.experimentautomation.application.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simucom.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
@@ -174,38 +174,38 @@
         <features name="org.palladiosimulator.experimentautomation.examples.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
         <features name="org.palladiosimulator.experimentautomation.feature.source.feature.group" versionRange="1.0.0.201506182016" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-simucomexactschedulers/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-simucomexactschedulers/releases/5.2.2/">
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.feature.group" versionRange="1.0.0.201506211112" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="edu.kit.ipd.sdq.pcm.simulation.scheduler.exact.feature.source.feature.group" versionRange="1.0.0.201506211129" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-measurementsui/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-measurementsui/releases/5.2.2/">
         <features name="org.palladiosimulator.measurementsui.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.measurementsui.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-plantuml/releases/5.2.2/">
         <features name="org.palladiosimulator.view.plantuml.generator.feature.feature.group"/>
         <features name="org.palladiosimulator.view.plantuml.generator.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-fluentapimodelgenerator/releases/5.2.2/">
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.generator.fluent.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/releases/5.2.2/">
         <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
         <features name="org.palladiosimulator.somox.ast2seff.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/releases/5.2.2/">
         <features name="org.palladiosimulator.retriever.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.retriever.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/releases/5.2.2/">
         <features name="org.somox.core.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="org.somox.core.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-limbo/nightly/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-limbo/releases/5.2.2/"/>
     </contributions>
   </validationSets>
   <validationSets label="Eclipse 2023-03" extends="//@validationSets[label='Palladio%20Features']">
