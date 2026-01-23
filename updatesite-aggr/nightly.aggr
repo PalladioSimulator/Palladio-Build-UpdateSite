@@ -190,21 +190,21 @@
         <features name="org.palladiosimulator.generator.fluent.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.generator.fluent.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/releases/5.2.2/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox-seff/nightly/">
         <features name="org.palladiosimulator.somox.ast2seff.feature.feature.group"/>
         <features name="org.palladiosimulator.somox.ast2seff.feature.source.feature.group"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/releases/5.2.2/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever/nightly/">
         <features name="org.palladiosimulator.retriever.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.category']"/>
         <features name="org.palladiosimulator.retriever.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.addons.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/releases/5.2.2/">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-somox/nightly/">
         <features name="org.somox.core.feature.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.category']"/>
         <features name="org.somox.core.feature.source.feature.group" categories="//@customCategories[identifier='org.palladiosimulator.deprecated.source.category']"/>
       </repositories>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/releases/5.2.2/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/releases/5.2.2/"/>
-      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/releases/5.2.2/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-services/nightly/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-reverseengineering-retriever-vulnerability/nightly/"/>
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-addons-vulnerability-metamodel/nightly/"/>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-limbo/releases/5.2.2/"/>
     </contributions>
   </validationSets>
