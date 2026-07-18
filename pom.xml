@@ -7,6 +7,7 @@
 		<groupId>org.palladiosimulator</groupId>
 		<artifactId>eclipse-parent</artifactId>
 		<version>0.10.1</version>
+		<relativePath/>
 	</parent>
 	<groupId>org.palladiosimulator.updatesite</groupId>
 	<artifactId>org.palladiosimulator.updatesite.aggregated</artifactId>
