@@ -205,20 +205,20 @@
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-limbo/nightly/"/>
     </contributions>
   </validationSets>
-  <validationSets label="Eclipse 2023-03" extends="//@validationSets[label='Palladio%20Features']">
+  <validationSets label="Eclipse 2025-12" extends="//@validationSets[label='Palladio%20Features']">
     <contributions label="Eclipse Orbit">
-      <repositories location="https://download.eclipse.org/tools/orbit/downloads/2023-03/">
+      <repositories location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.38.0/">
         <bundles name="org.antlr.runtime" versionRange="[3.2.0,3.3.0)"/>
         <bundles name="org.jdom2"/>
-        <bundles name="org.apache.commons.csv"/>
+        <bundles name="org.apache.commons.commons-csv"/>
         <bundles name="org.apache.commons.cli"/>
         <bundles name="org.yaml.snakeyaml"/>
-        <bundles name="org.apache.commons.io"/>
+        <bundles name="org.apache.commons.commons-io"/>
         <bundles name="com.google.gson"/>
         <bundles name="org.apache.commons.compress"/>
       </repositories>
-      <repositories location="https://download.eclipse.org/releases/2022-12/">
-        <bundles name="org.json"/>
+      <repositories location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.38.0/">
+        <bundles name="json"/>
       </repositories>
     </contributions>
     <contributions label="Henshin">
@@ -228,9 +228,6 @@
       <repositories location="https://updatesite.mdsd.tools/thirdparty-gmf-tooling/updates/releases-3.3.1a/">
         <features name="org.eclipse.gmf.tooling.runtime.feature.group"/>
       </repositories>
-      <repositories location="https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2023-03/">
-        <bundles name="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"/>
-      </repositories>
     </contributions>
     <contributions label="Nebula Incubation Widgets">
       <repositories location="https://archive.eclipse.org/nebula/Q22016/incubation/">
@@ -238,8 +235,9 @@
       </repositories>
     </contributions>
     <contributions label="SWT Chart">
-      <repositories location="https://download.eclipse.org/swtchart/releases/0.13.0/repository/">
-        <features name="org.eclipse.swtchart.feature.feature.group"/>
+      <repositories location="https://download.eclipse.org/releases/2025-12/202512101000/">
+        <bundles name="org.eclipse.swtchart"/>
+        <bundles name="org.eclipse.swtchart.extensions"/>
       </repositories>
     </contributions>
     <contributions label="OCL">
@@ -257,8 +255,8 @@
         <features name="org.eclipse.bpel.feature.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.30/"/>
-    <validationRepositories location="https://download.eclipse.org/releases/2023-12"/>
+    <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.38/"/>
+    <validationRepositories location="https://download.eclipse.org/releases/2025-12/202512101000/"/>
   </validationSets>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
@@ -269,7 +267,7 @@
   <customCategories identifier="org.palladiosimulator.addons.source.category" label="Palladio Bench Addons Sources" description="Palladio Bench Addons Sources" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.0/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.4 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.1/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.5 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.7 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.8 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.9 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.13/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.6/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.8/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.10/@features.1"/>
   <customCategories identifier="org.palladiosimulator.deprecated.category" label="Palladio Deprecated Features" description="Palladio Deprecated Features" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.0 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.0"/>
   <customCategories identifier="org.palladiosimulator.deprecated.source.category" label="Palladio Deprecated Features Source" description="Palladio Deprecated Features Source" features="//@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.5/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.4/@features.6 //@validationSets[label='Palladio%20Features']/@contributions[label='Palladio%20Core']/@repositories.10/@features.1 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.2 //@validationSets[label='Palladio%20Features']/@contributions[label='QuAL']/@repositories.3/@features.3 //@validationSets[label='Palladio%20Features']/@contributions[label='PCM%20Addons']/@repositories.11/@features.1"/>
-  <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202023-03']/@contributions[label='OCL']/@repositories.0/@features.0"/>
+  <customCategories identifier="org.palladiosimulator.external.ocl" label="External OCL" description="Palladio External Resources" features="//@validationSets[label='Eclipse%202025-12']/@contributions[label='OCL']/@repositories.0/@features.0"/>
   <contacts name="Nicolas Boltz" email="nicolas.boltz@kit.edu"/>
   <contacts name="Larissa Schmid" email="larissa.schmid@kit.edu"/>
 </aggregator:Aggregation>
