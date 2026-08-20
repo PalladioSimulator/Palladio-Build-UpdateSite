@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.palladiosimulator</groupId>
 		<artifactId>eclipse-parent</artifactId>
-		<version>0.11.0</version>
+		<version>0.12.0</version>
 		<relativePath/>
 	</parent>
 	<groupId>org.palladiosimulator.updatesite</groupId>
@@ -31,7 +31,6 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.5.0</version>
 				<configuration>
 					<filesets>
 						<fileset>
@@ -79,7 +78,7 @@
 						<args>org.eclipse.cbi.p2repo.cli.headless</args>
 						<args>aggregate</args>
 						<args>--buildModel</args>
-						<args>${updatesite.aggregator.filename}</args>^
+						<args>${updatesite.aggregator.filename}</args>
 						<args>--smtpHost</args>
 						<args>${updatesite.aggregator.smtpHost}</args>
 						<args>--action</args>
@@ -116,7 +115,7 @@
 						</repository>
 					</repositories>
 					<work>${project.build.directory}/eclipserun-work</work>
-					<executionEnvironment>JavaSE-17</executionEnvironment>
+					<executionEnvironment>JavaSE-21</executionEnvironment>
 				</configuration>
 			</plugin>
 			<plugin>
