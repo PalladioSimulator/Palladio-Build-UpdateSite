@@ -14,8 +14,9 @@
         <features name="com.github.jsqlparser.feature.source.feature.group"/>
         <features name="org.openjdk.nashorn.feature.feature.group"/>
         <features name="org.openjdk.nashorn.feature.source.feature.group"/>
+      </repositories>
+      <repositories location="https://updatesite.mdsd.tools/thirdparty-library/nightly/">
         <features name="org.jgrapht.feature.feature.group"/>
-        <features name="org.jgrapht.io.feature.feature.group"/>
       </repositories>
       <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-yakindustatecharts/nightly/">
         <features name="org.yakindu.base.xtext.utils.gmf.feature.group"/>
